@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-work-sans: 'Work Sans', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-work-sans);
+    font-size: 18px;
+    color: #121212;
+  }
+
+/************************************ ANIMACIONES DE BOTONES *******************************************************/
+/*******************************************************************************************************************/
+.btn-animation.btn-red-to-blue, .btn-animation.btn-white-to-red, .btn-animation.btn-white-to-blue, .btn-animation.btn-blue-to-red {
+  transition: background-position 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-position: right;
+}
+
+.btn-animation.btn-red-to-blue:hover, .btn-animation.btn-blue-to-red:hover, .btn-animation.btn-white-to-red:hover, .btn-animation.btn-white-to-blue:hover  {
+  background-position: left;
+}
+.btn-animation.btn-white-to-blue:hover {
+  color: white !important;
+}
+
+.btn-red-to-blue {
+  background: linear-gradient(to right, #0B0A93 50%, #ED2424 50%);
+  background-size: 200% 100%;
+}
+
+.btn-white-to-red {
+  background: linear-gradient(to right, #fff 50%, #ED2424 50%);
+  background-size: 200% 100%;
+}
+.btn-white-to-blue {
+  background: linear-gradient(to right, #fff 50%, #0B0A93 50%);
+  background-size: 200% 100%;
+}
+
+.btn-blue-to-red {
+  background: linear-gradient(to right, #ED2424 50%, #0B0A93 50%);
+  background-size: 200% 100%;
+}
+
+
+
+/******************************** Clases Home ********************************************************/
+/*****************************************************************************************************/
+
+.h1-print-HM {
+  background-image: url("./../../public/images/printing-back-hm.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.custom-path {
+  clip-path: path( 'M 267 0 L 0 237 L 16 332 L 195 332 L 178 400 L 1200 400 L 1200 0 Z');
+  min-height: 400px;
+  height: 400px;
+}
+
+.back-blue {
+    background-image: url('./../../public/images/brands-1200.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.checklist-li-hp::before {
+  content: ""; /* Necesario para mostrar el icono */
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url('/images/check_square.svg') no-repeat center center;
+  background-size: contain;
+}
+
+
+/**************************** Classes Review Carousel*************************************************/
+/*****************************************************************************************************/
+
+
+.divpath {
+  width: 384px;
+  height: 139px;
+  background-color: #F23434; /* O el color de fondo que prefieras */
+  clip-path: path("M0 10C0 4.47715 4.47715 0 10 0H374C379.523 0 384 4.47715 384 10L384 63.8497C384 66.8136 383.341 69.7406 382.071 72.4187L353.21 133.285C351.555 136.775 348.038 139 344.175 139H10C4.47715 139 0 134.523 0 129V10Z");
+  -webkit-clip-path: path("M0 10C0 4.47715 4.47715 0 10 0H374C379.523 0 384 4.47715 384 10L384 63.8497C384 66.8136 383.341 69.7406 382.071 72.4187L353.21 133.285C351.555 136.775 348.038 139 344.175 139H10C4.47715 139 0 134.523 0 129V10Z");
+}

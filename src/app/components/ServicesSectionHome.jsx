@@ -5,9 +5,9 @@ const ServicesCardHome = ({title, video, link, index}) => {
 
     let desfase = ''
     if (index==0 || index==3) {
-        desfase = 'mt-32'
+        desfase = 'lg:mt-32'
     }else if (index==1 || index==4) {
-        desfase = 'mt-16'
+        desfase = 'lg:mt-16'
     }
 
   return (

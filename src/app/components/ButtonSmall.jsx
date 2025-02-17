@@ -4,7 +4,7 @@ import React from "react"
 
 const Button4PSmall = ({buttonText, buttonBgAnimation, textColor, iconOption, buttonLink}) => {
 
-    const iconList = ['ib-white-blue.svg', 'ib-blue-white.svg', 'ir-white-blue.svg', 'ib-link-blue-white.svg']
+  const iconList = ['ib-white-blue.svg', 'ib-blue-white.svg', 'ir-white-blue.svg', 'ib-link-blue-white.svg', 'ib-white-red.svg']
   return (
     <>
       <a href={buttonLink} className={`flex rounded-lg items-center font-bold btn-animation ${buttonBgAnimation} max-w-[130px]`}>

@@ -9,18 +9,20 @@ const FooterComponent = (props) => {
   return (
     <>
       <div className="bg-4pblack text-white">
-        <div className="container flex">
-          <div className="w-7/12 content-center">
-            <Image
-              src="/images/Logo-no-lined.svg"
-              alt="Logo without bottom line"
-              sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
-              srcSet="/images/Logo-no-lined.svg 768w, /images/Logo-no-lined.svg 1024w"
-              width={442}
-              height={89}
-            />
+        <div className="container flex flex-wrap lg:flex-nowrap px-8 lg:px-0 pt-8 lg:pt-0">
+          <div className="lg:w-7/12 w-full content-center">
+            <a href="/">
+              <Image
+                src="/images/logo-white.svg"
+                alt="Logo without bottom line"
+                sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
+                srcSet="/images/logo-white.svg 768w, /images/logo-white.svg 1024w"
+                width={442}
+                height={89}
+              />
+            </a>
           </div>
-          <div className="w-5/12 py-16 pe-4">
+          <div className="lg:w-5/12 w-full lg:py-16 py-8 pe-4">
             <p className="leading-5 pb-4">{footerText}</p>
             <ul className="flex">
               {socialIcons.map((data, index) => (
@@ -40,70 +42,79 @@ const FooterComponent = (props) => {
           </div>
         </div>
         <div className="bg-white container pt-[2px]"></div>
-        <div className="container flex px-[98px] py-8">
-          <div className="w-2/12">
+        <div className="container flex flex-wrap lg:flex-nowrap lg:px-[98px] px-8 py-8">
+          <div className="lg:w-2/12 w-full mb-12 lg:mb-0">
             <p className="font-bold pb-4">Web Site Map</p>
             <div className="bg-4pblue pt-[3px] lg:w-[99px] mb-4"></div>
             <ul className="">
               {footerMenu.map((data, index) => (
-                <li key={index} className="pb-4">
-                  <a href={data.link} className="hover:text-4pred">{data.name}</a>
-                </li>
+                <a key={index} href={data.link} className="hover:text-4pred">
+                  <li className="pb-4">
+                    {data.name}
+                  </li>
+                </a>
               ))}
             </ul>
           </div>
-          <div className="w-6/12">
+          <div className="lg:w-6/12 w-full mb-12 lg:mb-0">
             <p className="font-bold pb-4">Services</p>
             <div className="bg-4pblue pt-[3px] lg:w-[99px] mb-4"></div>
-            <div className="flex">
-              <ul className="lg:w-[42%]">
+            <div className="flex flex-wrap lg:flex-nowrap">
+              <ul className="w-[47%] me-4 lg:me-0">
                 {footerMenuServicesleft.map((data, index) => (
-                  <li key={index} className="pb-4 leading-5">
-                    <a href={data.link} className="hover:text-4pred">{data.name}</a>
-                  </li>
+                  <a key={index} href={data.link} className="hover:text-4pred">
+                    <li className="pb-4 leading-5">
+                      {data.name}
+                    </li>
+                  </a>
                 ))}
               </ul>
 
-              <ul className="lg:w-[50%]">
+              <ul className="w-[48%]">
                 {footerMenuServicesRight.map((data, index) => (
-                  <li key={index} className="pb-4 leading-5">
-                    <a href={data.link} className="hover:text-4pred leading-3">{data.name}</a>
+                  <a key={index} href={data.link} className="hover:text-4pred leading-3">
+                  <li className="pb-4 leading-5">
+                    {data.name}
                   </li>
+                  </a>
                 ))}
               </ul>
             </div>
           </div>
-          <div className="w-4/12">
+          <div className="lg:w-4/12 w-full mb-12 lg:mb-0">
             <p className="font-bold pb-4">Contact Info</p>
             <div className="bg-4pblue pt-[3px] lg:w-[99px] mb-4"></div>
             <ul className="">
                 {footerContact.map((data, index) => (
-                  <li key={index} className="pb-4 leading-5 flex items-start">
-                    <Image
-                      src={`/images/${data.icon}.svg`} 
-                      alt="Logo without bottom line"
-                      sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
-                      srcSet={`/images/${data.icon}.svg 768w, /images/${data.icon}.svg 1024w`}
-                      width={27}
-                      height={27}
-                    />
-                    <a href={data.link} className="hover:text-4pred ms-2">{data.name}</a>
-                  </li>
+                  <a key={index} href={data.link} className="hover:text-4pred">
+                    <li className="pb-4 leading-5 flex items-start">
+                      <Image
+                        src={`/images/${data.icon}.svg`} 
+                        alt="Logo without bottom line"
+                        sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
+                        srcSet={`/images/${data.icon}.svg 768w, /images/${data.icon}.svg 1024w`}
+                        width={27}
+                        height={27} 
+                        className="me-2"
+                      />
+                      {data.name}
+                    </li>
+                  </a>
                 ))}
               </ul>
           </div>
         </div>
         <div className="bg-white container pt-[2px]"></div>
 
-        <div className="container flex">
-          <div className="w-1/2 content-center">
+        <div className="container flex flex-wrap lg:flex-nowrap">
+          <div className="lg:w-1/2 w-full content-center justify-items-center lg:justify-items-start">
             <p>All rights reserved | Copyright © <span>{year}</span> 4Print</p>
           </div>
-          <div className="w-1/2 flex items-center py-8 justify-around">
-            <p>
+          <div className="lg:w-1/2 w-full flex flex-wrap lg:flex-nowrap items-center py-8 justify-around">
+            <p className="w-full px-8 lg:px-0 text-center lg:text-start lg:w-11/12">
               <a href="https://qadigitalads.com/en/home/" target="_black" className="hover:text-4pred">Maryland Web Design and Development by QA Digital Ads</a>
             </p>
-            <a href="https://qadigitalads.com/en/home/">
+            <a href="https://qadigitalads.com/en/home/" className="w-full lg:w-1/12 justify-items-center pt-6 lg:pt-0">
               <Image
                 src='/images/logo-QA-Digital-Ads.svg' 
                 alt="logo QA Digital Ads"

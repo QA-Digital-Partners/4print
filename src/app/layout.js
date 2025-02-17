@@ -6,7 +6,7 @@ import "./globals.css";
 
 const workSans = Work_Sans({
   subsets: ['latin'], // Subconjuntos de caracteres
-  weight: ['400', '600', '700'], // Pesos que quieres cargar
+  weight: ['400', '600', '700', '900'], // Pesos que quieres cargar
   variable: '--font-work-sans', // Variable CSS para usar en estilos
 });
 

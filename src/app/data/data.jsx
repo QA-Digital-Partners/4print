@@ -5,7 +5,8 @@ export const headerMenu = [
     {name:'About Us', link: '/about'},
     {name:'Services', link: '/services'},
     {name:'Contact', link: '/contact'},
-    {name:'Gallery', link: '/gallry'}
+    {name:'Gallery', link: '/gallry'},
+    {name:'CommercialWrap', link: '/commercial-vehicle-wrapping-lettering'}
 ]
 
 // Textos del footer
@@ -60,7 +61,25 @@ export const BestBrands =[ '3M-179.svg', 'avery-179.svg', 'arlon-179.svg', 'brig
 
 // Section MiniMenu - Home Page
 
-export const MiniMenuHome = [ 'Why Choose Vehicle Wrapping for Your Business?', 'Why Choose Us?', 'Design & Consultation', 'Other Services', 'Before & After', 'Certifications']
+export const MiniMenuHome = [ 
+    {name:'Why Choose Vehicle Wrapping for Your Business?', 
+     link: '#whywrap'
+    },
+    {name:'Why Choose Us?',
+     link: '#whyus'
+    },
+    {name:'Design & Consultation',
+     link: '#design'
+    }, 
+    {name:'Other Services',
+     link: '#other'
+    }, {name:'Before & After',
+     link: '#before'
+    }, 
+    {name:'Certifications', 
+     link: '#certifications'
+    }
+]
 
 // Section 4Print Experience - Home Page
 
@@ -153,3 +172,204 @@ export const FleetGraphicsCert = ['Specialized knowledge in large-scale vehicle 
 export const GeekWrapsCert = ['Air Wrangler™ Certified Graphics Installer','Advanced Fleet Graphics Installation Training','Specialized expertise in complex vehicle applications']
 
 
+// About Page
+export const QualityProcess = ['Premium materials from industry leaders ','Expert installation taking 2-5 days based on project complexity','Every project inspected before delivery']
+export const AccesibleStart = ['Start with just $50 to see your design come to life','Quick 2-3 day design turnaround','Complimentary logo design for wraps over $350'] 
+
+// Services Page 
+
+export const MiniMenuServices = [ 
+    {name:'Commercial Vehicle Wrapping / Fleet Wrapping', 
+    link: '#'
+   },
+   {name:'Commercial Vehicle Lettering, USDOT & MHIC',
+    link: '#'
+   },
+   {name:'Custom Car Wraps (Color Change)',
+    link: '#'
+   }, 
+   {name:'Commercial Printing',
+    link: '#'
+   }, 
+   {name:'Apparel',
+    link: '#'
+   }, 
+   {name:'Stationery Printing', 
+    link: '#'
+   }
+]
+
+
+export const CommercialLetering = [
+    {
+        title: "Commercial Lettering Wrapping",
+        text: "Professional vinyl lettering to display your business information clearly and effectively."
+    },
+    {
+        title: "USDOT Numbers",
+        text: "Required DOT number installation for commercial vehicles, compliant with federal regulations."
+    },
+    {
+        title: "MHIC Numbers",
+        text: "Maryland Home Improvement Commission number display, meeting state contractor requirements."
+    }
+]
+
+export const CustomCarWraps = [
+    {
+        title: "Color Change",
+        text: "Complete vehicle color transformation without painting. A reversible solution for a fresh look."
+    },
+    {
+        title: "Graphic Design and Racing Stripes",
+        text: "Perfect for accents and custom designs."
+    },
+    {
+        title: "Textured, Chrome and special Vinyls",
+        text: "Unique finishes from sleek matte to chrome and more."
+    }
+]
+
+export const ApparelCardsData = [
+    {
+        image: 't-shirt.webp',
+        title: "T-shirts (Short and Long Sleeve)",
+        text: "Custom printed and branded t-shirts. Perfect for teams, events, and promotions."
+    },
+    {
+        image: 'polo-shirts.webp',
+        title: "Polo Shirts",
+        text: "Professional embroidered polos for business and corporate wear."
+    },
+    {
+        image: 'hoodies.webp',
+        title: "Hoodies",
+        text: "Comfortable custom hoodies with your design or company branding."
+    },
+    {
+        image: 'jackets.webp',
+        title: "Jackets",
+        text: "High-quality branded jackets for professional team appearance."
+    },
+    {
+        image: 'caps.webp',
+        title: "Caps",
+        text: "Custom embroidered caps for everyday brand visibility."
+    },
+    {
+        image: 'winter-hats.webp',
+        title: "Winter Hats",
+        text: "Warm, branded beanies and winter hats for cold weather promotion."
+    }
+]
+
+export const StationaryPrintingLeft = [
+    {
+        title: "Business Cards",
+        text: "Professional business cards that make a lasting first impression."
+    },
+    {
+        title: "Flyers",
+        text: "Vibrant promotional flyers to announce events and offers."
+    },
+    {
+        title: "Postcards",
+        text: "Eye-catching direct mail pieces for targeted marketing."
+    },
+]
+
+export const StationaryPrintingRight = [
+    {
+        title: "Door Hangers",
+        text: "Direct-response marketing tools for local businesses."
+    },
+    {
+        title: "Brochures",
+        text: "Professional folded brochures to showcase your products and services."
+    },
+    {
+        title: "Carbonless Forms",
+        text: "Multi-part forms for efficient business documentation."
+    }
+]
+
+export const WhyChoseServicePageTop = [
+    {
+        image: 'quick-turnaround.svg',
+        title: "Quick Turnaround",
+    },
+    {
+        image: 'premium-materials.svg',
+        title: "Premium Materials",
+    },
+    {
+        image: 'competitive-pricing.svg',
+        title: "Competitive Pricing",
+    }
+]
+
+export const WhyChoseServicePageBottom = [
+    {
+        image: 'trained-and-experienced.svg',
+        title: "Trained and Experienced",
+    },
+    {
+        image: 'quality-inspection.svg',
+        title: "Quality Inspection",
+    },
+]
+
+export const WhyChoseWrappingPageTop = [
+    {
+        image: 'quick-turnaround.svg',
+        title: "Quick Turnaround",
+    },
+    {
+        image: 'premium-materials.svg',
+        title: "Premium Materials",
+    },
+    {
+        image: 'competitive-pricing.svg',
+        title: "Competitive Pricing",
+    },
+    {
+        image: 'competitive-pricing.svg',
+        title: "Competitive Pricing",
+    }
+]
+
+export const WhyChoseWrappingPageBottom = [
+    {
+        image: 'trained-and-experienced.svg',
+        title: "Trained and Experienced",
+    },
+    {
+        image: 'quality-inspection.svg',
+        title: "Quality Inspection",
+    },
+    {
+        image: 'quality-inspection.svg',
+        title: "Quality Inspection",
+    },
+]
+
+export const Certifications120 = [
+    {
+        image: 'Geek-wraps-cert.webp',
+        title: "Geek Wraps Certificate",
+    },
+    {
+        image: 'advance-trainer-3m.webp',
+        title: "Advanced Training",
+    },
+    {
+        image: '3m-fleet-graphics-1.webp',
+        title: "3M Fleet Graphics",
+    },
+    {
+        image: '3m-logo-cert-1.webp',
+        title: "3M Preferred Installer",
+    },
+]
+
+export const FeaturesFullWrap = ['Full Covered Design', 'Premium Materials', '1 to 5 year durability']

@@ -14,20 +14,31 @@
 
 /************************************ ANIMACIONES DE BOTONES *******************************************************/
 /*******************************************************************************************************************/
-.btn-animation.btn-red-to-blue, .btn-animation.btn-white-to-red, .btn-animation.btn-white-to-blue, .btn-animation.btn-blue-to-red {
+.btn-animation.btn-red-to-blue, .btn-animation.btn-white-to-red, .btn-animation.btn-white-to-blue, .btn-animation.btn-blue-to-red, 
+.btn-animation.btn-red-to-white, .btn-animation.btn-blue-to-white {
   transition: background-position 0.3s ease-in-out, color 0.3s ease-in-out;
   background-position: right;
 }
 
-.btn-animation.btn-red-to-blue:hover, .btn-animation.btn-blue-to-red:hover, .btn-animation.btn-white-to-red:hover, .btn-animation.btn-white-to-blue:hover  {
+.btn-animation.btn-red-to-blue:hover, .btn-animation.btn-blue-to-red:hover, .btn-animation.btn-white-to-red:hover, 
+.btn-animation.btn-white-to-blue:hover, .btn-animation.btn-red-to-white:hover, .btn-animation.btn-blue-to-white:hover  {
   background-position: left;
 }
-.btn-animation.btn-white-to-blue:hover {
+.btn-animation.btn-white-to-blue:hover, .btn-animation.btn-red-to-white:hover p, .btn-animation.btn-white-to-blue:hover p {
   color: white !important;
+}
+
+.btn-animation.btn-blue-to-white:hover p {
+  color: #0B0A93;
 }
 
 .btn-red-to-blue {
   background: linear-gradient(to right, #0B0A93 50%, #ED2424 50%);
+  background-size: 200% 100%;
+}
+
+.btn-blue-to-white {
+  background: linear-gradient(to right, #fff 50%, #0B0A93 50%);
   background-size: 200% 100%;
 }
 
@@ -36,12 +47,17 @@
   background-size: 200% 100%;
 }
 .btn-white-to-blue {
-  background: linear-gradient(to right, #fff 50%, #0B0A93 50%);
+  background: linear-gradient(to right, #0B0A93  50%, #fff 50%);
   background-size: 200% 100%;
 }
 
 .btn-blue-to-red {
   background: linear-gradient(to right, #ED2424 50%, #0B0A93 50%);
+  background-size: 200% 100%;
+}
+
+.btn-red-to-white {
+  background: linear-gradient(to right, #ED2424 50%, #fff 50%);
   background-size: 200% 100%;
 }
 
@@ -59,8 +75,6 @@
 
 .custom-path {
   clip-path: path( 'M 267 0 L 0 237 L 16 332 L 195 332 L 178 400 L 1200 400 L 1200 0 Z');
-  min-height: 400px;
-  height: 400px;
 }
 
 .back-blue {
@@ -85,8 +99,212 @@
 
 .divpath {
   width: 384px;
-  height: 139px;
-  background-color: #F23434; /* O el color de fondo que prefieras */
-  clip-path: path("M0 10C0 4.47715 4.47715 0 10 0H374C379.523 0 384 4.47715 384 10L384 63.8497C384 66.8136 383.341 69.7406 382.071 72.4187L353.21 133.285C351.555 136.775 348.038 139 344.175 139H10C4.47715 139 0 134.523 0 129V10Z");
-  -webkit-clip-path: path("M0 10C0 4.47715 4.47715 0 10 0H374C379.523 0 384 4.47715 384 10L384 63.8497C384 66.8136 383.341 69.7406 382.071 72.4187L353.21 133.285C351.555 136.775 348.038 139 344.175 139H10C4.47715 139 0 134.523 0 129V10Z");
+  background-color: #EFEEEE; /* O el color de fondo que prefieras */
+  clip-path: path(" M 0 10 C0 4.47715 4.47715 0 10 0 L 374 0 C 379.523 0 384 4.47715 384 10 L 384 264 Q 384 274, 374 274 L 231 274 Q 221 274, 221 264 L 221 225 Q 221 215, 211 215 L 10 215 Q 0 215, 0 205 Z");
+  -webkit-clip-path: path(" M 0 10 C0 4.47715 4.47715 0 10 0 L 374 0 C 379.523 0 384 4.47715 384 10 L 384 264 Q 384 274, 374 274 L 231 274 Q 221 274, 221 264 L 221 225 Q 221 215, 211 215 L 10 215 Q 0 215, 0 205 Z")
+}
+
+/**************************** Classes About Home *************************************************/
+/*****************************************************************************************************/
+
+.about-home-page {
+  background-image: url('/images/about-4print.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-rombo {
+  transform: skew(-7deg, 0deg);
+  box-shadow: 10px 10px 11px rgba(0, 0, 0, 0.15);
+  border: solid 1px #A8A7A7;
+}
+
+.no-skew {
+  transform: skew(7deg, 0deg);
+}
+
+/**************************** Classes Mission Home *************************************************/
+/*****************************************************************************************************/
+
+.bg-mission-hp {
+  background-image: url('/images/mission-home-bg.webp');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: path('M 0 0 L 1200 0 L 1200 491 L 0 644 Z');
+}
+
+/**************************** Classes Contact Form Footer *************************************************/
+/*****************************************************************************************************/
+
+.bg-contact-form {
+  background-image: url('/images/contact-form-bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.custom-form input::placeholder, .custom-form textarea::placeholder {
+  font-size: 18px;
+  color: #121212;
+  opacity: 1;
+}
+
+/**************************** Classes Certificaciones About Page *************************************/
+/*****************************************************************************************************/
+
+.bg-cert-ap {
+  background: url('/images/certifications-about.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/**************************** Classes Hero Banner About Page *************************************/
+/*****************************************************************************************************/
+
+.bg-banner-ap {
+  background: url('/images/about-banner.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/**************************** Classes Hero Banner Services Page *************************************/
+/*****************************************************************************************************/
+
+.shape-banner-services {
+  clip-path: path('M0 46 L 204 46 L 204 0 L 453 0 L 453 231 L 282 231 L 282 334 L 0 334 Z');
+}
+
+.hero-banner-services {
+  background: url('/images/bg-banner-services.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/**************************** Classes Commercial Wrap Services Page **********************************/
+/*****************************************************************************************************/
+
+.rectangle-cuted {
+  background-image: url('/images/rectangle-cuted.svg');
+  background-position: bottom right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/**************************** Classes Custom Car Wrap Services Page **********************************/
+/*****************************************************************************************************/
+
+.bg-custom-car-wrap-sv {
+  background-image: url('/images/custom-car-wrap-bg.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  
+}
+
+.bg-custom-car-wrap-red {
+  background-image: url('/images/rectangle-cuted-2.svg');
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/**************************** Classes Commercial Printing Services Page *******************************/
+/*****************************************************************************************************/
+
+.wall-wrap, .window-vinils, .banners, .cut-vinyl, .car-magnets, .yard-signs, .stickers {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wall-wrap {
+  background-image: url('/images/wall-wrap.webp');
+}
+
+.window-vinils {
+  background-image: url('/images/window-vinils.webp');
+}
+
+.banners {
+  background-image: url('/images/banners.webp');
+}
+
+.cut-vinyl {
+  background-image: url('/images/cut-vinyl.webp');
+}
+
+.car-magnets {
+  background-image: url('/images/car-magnets.webp');
+}
+
+.yard-signs {
+  background-image: url('/images/yard-signs.webp');
+}
+
+.stickers {
+  background-image: url('/images/stickers.webp');
+}
+
+
+.bg-apparel {
+  background-image: url('/images/apparel-bg.svg');
+  background-position: bottom right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.bg-why-choose-blue {
+  background-image: url('/images/rectangle-cuted-blue.svg');
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.back-red-wrapping-page {
+  background-image: url('./../../public/images/cta-wrappin-page-red.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+.rectangle-cuted-black {
+  background-image: url('/images/rectangle-cuted-black.svg');
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-commercial-full {
+  background-image: url('/images/commercial-vehicle-wrap-fleet.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-commercial-partial {
+  background-image: url('/images/commercial-vehicle-partial-wrap.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+@media (max-width:767px) {
+
+  .custom-path {
+    clip-path: none;
+  }
+
+  .bg-mission-hp {
+    background-image: url('/images/Frame-59.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: path('M 0 0 L 420 0 L 420 1000 L 0 1150 Z');
+  }
 }

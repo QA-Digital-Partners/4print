@@ -3,7 +3,7 @@ import React from "react"
 const ReviewIndividual = ({slide, heightMod}) => {
   return (
     <>
-        <div className={`p-4 border-[1px] h-fit custom-bg-grey min-h-[274px] max-w-[387px] w-full min-w-[387px]`}>
+        <div className={`p-4 border-[1px] h-fit divpath lg:min-h-[274px] lg:max-w-[387px] w-full lg:min-w-[387px] max-w-[400px] min-h-[30vh]`}>
           <div className='flex items-center'>
               <div>
                   <p className='py-2 lg:leading-[22px]'>{slide.review}</p>

@@ -18,7 +18,7 @@ const YouTubeVideo = ({image, imageWidth, imagHeigth, videoId, videoWidth, video
           <Image
             src={`/images/${image}`} // Reemplaza con la URL de tu imagen
             alt="Video Thumbnail"
-            className="cursor-pointer"
+            className="cursor-pointer mx-auto"
             sizes="(min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw"
             srcSet={`/images/${image} 768w, /images/${image} 1024w`}
             width={imageWidth}
@@ -32,7 +32,7 @@ const YouTubeVideo = ({image, imageWidth, imagHeigth, videoId, videoWidth, video
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          className="rounded-xl"
+          className="rounded-xl mx-auto"
           width={videoWidth} height={videoHeight} 
         ></iframe>
       )}

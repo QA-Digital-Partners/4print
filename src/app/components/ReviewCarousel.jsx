@@ -15,6 +15,8 @@ import { Review, ReviewImages } from '../data/data';
 SwiperCore.use([Navigation]);
 
 const ReviewCarousel = ({ heightMod }) => {
+
+  const customClass = 'max-w-[50px] lg:max-w-[80px] max-h-[50px] lg:max-h-[80px] mx-16 lg:mx-8'
   const swiperRef = useRef(null);
   const prev = useRef(null); // Crear refs para los botones
   const next = useRef(null);
@@ -35,7 +37,7 @@ const ReviewCarousel = ({ heightMod }) => {
 
 
   return (
-    <div className='lg:max-w-[401px]'>
+    <div className='lg:max-w-[401px] w-full'>
       <Swiper
         ref={swiperRef}
         loop={true}
@@ -51,7 +53,7 @@ const ReviewCarousel = ({ heightMod }) => {
           el: ".pagination-circles",
           clickable: true,
           renderBullet: (index, className) => {
-            return `<span class="${className}" style="background-image: url('${ReviewImages[index]}');"></span>`;
+            return `<span class="${className} ${customClass}" style="background-image: url('${ReviewImages[index]}');"></span>`;
           },
         }}
         breakpoints={{
